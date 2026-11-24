@@ -37,7 +37,7 @@ address".
 - **Release** gives the message to Android as a new message.
 - **Block** keeps the record and sets its result to blocked. No app receives the message, and you can't undo it.
 
-Below that, the list groups messages by day. See [held messages](/NightJar/guide/held-messages/) for what happens on
+Below that, the list groups messages by day. See [held messages](/NightJar-Postmark/guide/held-messages/) for what happens on
 release.
 
 ## Search and quick filters
@@ -107,7 +107,7 @@ detail opens next to the list. From top to bottom:
 | What this is | A short explanation of the type |
 | Message text | The decoded text, if the message has any |
 | Evidence | Protocol ID (TP-PID), data coding (TP-DCS), user data length, destination port and service centre, followed by format errors and anomalies in the PDU |
-| Why NightJar marks this as suspicious | The patterns a detector found. For a message below Suspicious, the heading is **Why NightJar flagged it**. See [detection](/NightJar/features/detection/). |
+| Why NightJar marks this as suspicious | The patterns a detector found. For a message below Suspicious, the heading is **Why NightJar flagged it**. See [detection](/NightJar-Postmark/features/detection/). |
 | What happened | Each step, for example "The phone service received it", "Classified as Settings push" and the result |
 | Parts | For a multipart message, the arrival time of each part. If parts are missing, it shows how many and the date Android deletes the incomplete message. |
 | Raw PDU | *Researcher mode.* Select **Show** to see the bytes in hex, the decoded fields and the pipeline trace. Select a byte to see its field. |
@@ -123,13 +123,13 @@ for the limit.
 |---|---|
 | Release | Gives a held message to Android. Only for held messages of a type that can be released. |
 | Block similar | Opens the rule editor with a rule for messages like this one. |
-| Mark sender as expected | Adds the sender to [Known senders](/NightJar/guide/known-senders/). New messages from this sender get a lower severity. |
+| Mark sender as expected | Adds the sender to [Known senders](/NightJar-Postmark/guide/known-senders/). New messages from this sender get a lower severity. |
 | Mark app as trusted | For a message that an app sent. NightJar records background messages from this app as Normal. |
 | Star, Unstar | Adds the message to the **Only starred** filter, or removes it |
 | Mark as not reviewed | Brings back the unreviewed dot |
 | Copy text | Copies the message text |
 | Copy hex | *Researcher mode.* Copies the PDU in hex |
-| Export | Exports this message. See [export](/NightJar/guide/export/). |
+| Export | Exports this message. See [export](/NightJar-Postmark/guide/export/). |
 | Delete | Deletes the message from NightJar |
 
 If a release fails, NightJar shows the reason and the message stays on hold, for example "NightJar did not release

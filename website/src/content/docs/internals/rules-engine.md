@@ -215,7 +215,7 @@ Some presets add rules for subtypes whose action differs from the type action:
 | Block auto-open link pushes | Block | Recommended, Strict, Quarantine |
 
 When a preset asks for an action that the matrix doesn't allow, it uses Notify instead.
-[Message types](/NightJar/features/message-types/) lists the action of each preset for each type.
+[Message types](/NightJar-Postmark/features/message-types/) lists the action of each preset for each type.
 
 ## Validation
 

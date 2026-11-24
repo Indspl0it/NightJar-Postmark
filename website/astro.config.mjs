@@ -4,12 +4,12 @@ import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
 import d2 from 'astro-d2';
 
-const repo = 'https://github.com/Indspl0it/NightJar';
+const repo = 'https://github.com/Indspl0it/NightJar-Postmark';
 
-// GitHub Pages serves the site from https://indspl0it.github.io/NightJar/.
+// GitHub Pages serves the site from https://indspl0it.github.io/NightJar-Postmark/.
 export default defineConfig({
 	site: 'https://indspl0it.github.io',
-	base: '/NightJar',
+	base: '/NightJar-Postmark',
 	trailingSlash: 'always',
 	integrations: [
 		starlight({

@@ -63,7 +63,7 @@ NightJar parses each message with its own parser before Android does. The parser
 - **Device management request:** asks your phone to contact a device management server, which can change the phone
   remotely. The Recommended preset blocks it.
 
-[Message types](/NightJar/features/message-types/) lists every type NightJar knows, with its risk and the actions
+[Message types](/NightJar-Postmark/features/message-types/) lists every type NightJar knows, with its risk and the actions
 available for it.
 
 ## How NightJar works
@@ -77,16 +77,16 @@ NightJar ships as one APK with two parts:
 
 Google Messages, RCS and regular texts work as before, and NightJar doesn't need to be your default SMS app.
 NightJar also records the SMS that apps on your phone send, including messages sent without your messaging app. See
-[Outgoing messages](/NightJar/features/outgoing/).
+[Outgoing messages](/NightJar-Postmark/features/outgoing/).
 
 ## The app
 
 | Tab | What it shows |
 |---|---|
-| [Home](/NightJar/guide/home/) | Whether protection is working, messages that need your attention, and counts of hidden, suspicious, held and blocked messages. |
-| [Messages](/NightJar/guide/messages/) | Every recorded message with its type and severity. The detail screen explains the message, shows a timeline of what happened to it, and can show the raw data. |
-| [Protection](/NightJar/guide/protection/) | The preset and the action of each type, custom rules, known senders, the status of the module, and what NightJar can't see. |
-| [Settings](/NightJar/guide/settings/) | Notifications, detectors, data retention, export, logs, and the apps that send SMS from your phone. |
+| [Home](/NightJar-Postmark/guide/home/) | Whether protection is working, messages that need your attention, and counts of hidden, suspicious, held and blocked messages. |
+| [Messages](/NightJar-Postmark/guide/messages/) | Every recorded message with its type and severity. The detail screen explains the message, shows a timeline of what happened to it, and can show the raw data. |
+| [Protection](/NightJar-Postmark/guide/protection/) | The preset and the action of each type, custom rules, known senders, the status of the module, and what NightJar can't see. |
+| [Settings](/NightJar-Postmark/guide/settings/) | Notifications, detectors, data retention, export, logs, and the apps that send SMS from your phone. |
 
 ## Actions
 
@@ -97,8 +97,8 @@ NightJar also records the SMS that apps on your phone send, including messages s
 | Hold | The message is kept aside until you release or block it. |
 | Block | The message is discarded before any app receives it. |
 
-New installs use the Recommended preset. You can change to a stricter [preset](/NightJar/guide/protection/), set
-single types on the Protection tab, or add [custom rules](/NightJar/guide/custom-rules/) for specific senders.
+New installs use the Recommended preset. You can change to a stricter [preset](/NightJar-Postmark/guide/protection/), set
+single types on the Protection tab, or add [custom rules](/NightJar-Postmark/guide/custom-rules/) for specific senders.
 
 ## Privacy and safety
 
@@ -108,10 +108,10 @@ single types on the Protection tab, or add [custom rules](/NightJar/guide/custom
 - If NightJar's code fails, Android handles the message as if NightJar weren't installed.
 - After a reboot, NightJar applies your last rules as soon as the phone service starts, before you unlock the phone.
 - NightJar sees only what reaches Android. Messages that the modem answers by itself, and RCS chats, are outside
-  its view. See [Limitations](/NightJar/safety/limitations/).
+  its view. See [Limitations](/NightJar-Postmark/safety/limitations/).
 
 ## Get started
 
-1. Check the [requirements](/NightJar/requirements/): a rooted phone with Android 15 or later, and Vector or LSPosed.
-2. [Install NightJar](/NightJar/install/).
-3. Read the [blocking cautions](/NightJar/safety/blocking-cautions/) before you change to a stricter preset.
+1. Check the [requirements](/NightJar-Postmark/requirements/): a rooted phone with Android 15 or later, and Vector or LSPosed.
+2. [Install NightJar](/NightJar-Postmark/install/).
+3. Read the [blocking cautions](/NightJar-Postmark/safety/blocking-cautions/) before you change to a stricter preset.

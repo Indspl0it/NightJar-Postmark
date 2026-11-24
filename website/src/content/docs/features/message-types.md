@@ -32,7 +32,7 @@ The actions:
   app-only messages and messages handled by the phone maker go to their app first. For these types, NightJar records
   the message and can notify you.
 - **Allow only.** NightJar doesn't stop regular texts, delivery reports or messages saved to the SIM by type. A
-  [custom rule](/NightJar/guide/custom-rules/) with a sender, port or text condition can hold or block a regular
+  [custom rule](/NightJar-Postmark/guide/custom-rules/) with a sender, port or text condition can hold or block a regular
   text.
 
 ## Types
@@ -91,7 +91,7 @@ The actions:
   join them. The parts that arrived were already delivered, so NightJar can only notify you.
 - **Malformed SMS:** the PDU has a format error, such as a cut-off address or a message that is too short. The title
   names the error, for example **Malformed SMS: address cut off**. Damaged messages can crash the phone service. See
-  [format errors](/NightJar/features/detection/#format-errors).
+  [format errors](/NightJar-Postmark/features/detection/#format-errors).
 - **Unreadable SMS:** the message type field has a value NightJar doesn't know, so NightJar can't check the message.
   A release works, so the presets hold it.
 
@@ -223,12 +223,12 @@ WAP push messages arrive as SMS on the WAP push port and carry a content type th
 | Cell broadcast | A broadcast message from the network. | Normal | <span class="nj-act nj-act-allow">Allow</span> <span class="nj-act nj-act-notify">Notify</span> <span class="nj-act nj-act-block">Block</span> | <span class="nj-act nj-act-allow">Allow</span> | <span class="nj-act nj-act-block">Block</span> | <span class="nj-act nj-act-block">Block</span> |
 
 Strict and Quarantine block other cell broadcasts, but emergency alerts always reach you. The title shows the
-channel, for example **Cell broadcast (channel 50)**. See [cell broadcasts](/NightJar/features/cell-broadcast/).
+channel, for example **Cell broadcast (channel 50)**. See [cell broadcasts](/NightJar-Postmark/features/cell-broadcast/).
 
 ### Sent by apps
 
 These types record messages that leave the phone. NightJar doesn't block them by type. To stop an app from sending,
-use [Apps that send messages](/NightJar/features/outgoing/#block-an-app-from-sending).
+use [Apps that send messages](/NightJar-Postmark/features/outgoing/#block-an-app-from-sending).
 
 | Type | What it is | Default severity |
 |---|---|---|
@@ -260,7 +260,7 @@ If the module can't read a subtype, the subtype rule doesn't match and the type'
 ## Emergency alerts
 
 NightJar always delivers ETWS and CMAS emergency alerts and records them. No preset or rule can hold or block them.
-See [cell broadcasts](/NightJar/features/cell-broadcast/).
+See [cell broadcasts](/NightJar-Postmark/features/cell-broadcast/).
 
 A location request (SUPL) during an emergency call, or within the grace time after it, always goes to Android, and
 NightJar rates it Normal. The grace time is 5 minutes by default. You can set 5 to 60 minutes in Settings >

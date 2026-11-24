@@ -36,8 +36,8 @@ Other phones can work. Each phone maker changes the phone service a little, so o
 not attach, and NightJar may not be able to hold or block some message types. If the blocking hooks don't load,
 NightJar only records messages.
 
-The [Protection status](/NightJar/guide/protection-status/) screen shows the state of each hook on your phone. To
-report a new build, see [compatibility](/NightJar/help/compatibility/).
+The [Protection status](/NightJar-Postmark/guide/protection-status/) screen shows the state of each hook on your phone. To
+report a new build, see [compatibility](/NightJar-Postmark/help/compatibility/).
 
 ## Permissions
 

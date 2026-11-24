@@ -44,7 +44,7 @@ A rule can't hold or block all regular texts. If you try, NightJar shows "Cannot
 you to add a sender, port or text condition.
 
 Don't block your bank, delivery services or two-factor senders unless you have another way to get their codes. Add
-them to [known senders](/NightJar/guide/known-senders/) instead.
+them to [known senders](/NightJar-Postmark/guide/known-senders/) instead.
 
 ## Later filters don't see a blocked message
 
@@ -54,7 +54,7 @@ carrier filter and the apps after it don't see the message.
 ## Hold isn't available for every type
 
 NightJar can hold a message only if it can give it back to Android later. For SIM updates, cell broadcasts, malformed
-messages and some other types, NightJar can only block. See [held messages](/NightJar/guide/held-messages/).
+messages and some other types, NightJar can only block. See [held messages](/NightJar-Postmark/guide/held-messages/).
 
 When you block a held message, you can't undo it: NightJar never delivers it.
 

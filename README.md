@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar/main/website/public/favicon.svg" width="96" alt="NightJar logo">
+  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar-Postmark/main/website/public/favicon.svg" width="96" alt="NightJar logo">
 </p>
 
 <h1 align="center">NightJar</h1>
@@ -10,9 +10,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Indspl0it/NightJar/releases/latest"><img src="https://img.shields.io/github/v/release/Indspl0it/NightJar?label=release" alt="Latest release"></a>
+  <a href="https://github.com/Indspl0it/NightJar-Postmark/releases/latest"><img src="https://img.shields.io/github/v/release/Indspl0it/NightJar-Postmark?label=release" alt="Latest release"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--3.0--or--later-blue" alt="License: GPL-3.0-or-later"></a>
-  <a href="https://indspl0it.github.io/NightJar/"><img src="https://img.shields.io/badge/docs-indspl0it.github.io%2FNightJar-5b82e6" alt="Documentation"></a>
+  <a href="https://indspl0it.github.io/NightJar-Postmark/"><img src="https://img.shields.io/badge/docs-indspl0it.github.io%2FNightJar-5b82e6" alt="Documentation"></a>
 </p>
 
 ---
@@ -21,7 +21,7 @@ Your phone receives SMS that never show up in your messaging app. The network, y
 
 NightJar runs inside Android's phone service, the system process that receives SMS from the modem. It checks each message before Android acts on it, blocks the types that attacks use, holds suspicious ones for you to review, and keeps a record of every message with a plain explanation of what it was.
 
-> **Early release (0.5.1).** Install NightJar on a phone you can recover, and read the [blocking cautions](https://indspl0it.github.io/NightJar/safety/blocking-cautions/) before you pick a stricter preset.
+> **Early release (0.5.1).** Install NightJar on a phone you can recover, and read the [blocking cautions](https://indspl0it.github.io/NightJar-Postmark/safety/blocking-cautions/) before you pick a stricter preset.
 
 ## What it protects you from
 
@@ -50,10 +50,10 @@ NightJar also records the SMS that apps on your phone send, and you can stop an 
 ## Screenshots
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar/main/website/src/assets/screens/home.png" width="200" alt="Home: protection state and messages that need your attention">
-  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar/main/website/src/assets/screens/messages.png" width="200" alt="Messages: hidden messages with their type and result">
-  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar/main/website/src/assets/screens/detail.png" width="200" alt="Message detail: a blocked malformed WAP push with its evidence">
-  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar/main/website/src/assets/screens/protection.png" width="200" alt="Protection: the preset and one action for each message type">
+  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar-Postmark/main/website/src/assets/screens/home.png" width="200" alt="Home: protection state and messages that need your attention">
+  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar-Postmark/main/website/src/assets/screens/messages.png" width="200" alt="Messages: hidden messages with their type and result">
+  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar-Postmark/main/website/src/assets/screens/detail.png" width="200" alt="Message detail: a blocked malformed WAP push with its evidence">
+  <img src="https://raw.githubusercontent.com/Indspl0it/NightJar-Postmark/main/website/src/assets/screens/protection.png" width="200" alt="Protection: the preset and one action for each message type">
 </p>
 
 ## Privacy and safety
@@ -62,7 +62,7 @@ NightJar also records the SMS that apps on your phone send, and you can stop an 
 - **Your texts stay yours.** NightJar counts your regular conversations but doesn't store them.
 - **Encrypted storage.** The history is in a SQLCipher database, and an optional app lock protects the app.
 - **Fails open.** If NightJar's code fails, Android handles the message as if NightJar weren't installed. NightJar never changes what your phone answers the network.
-- **Honest limits.** NightJar sees what reaches Android. Messages the modem answers by itself, and RCS chats, are outside its view. See [limitations](https://indspl0it.github.io/NightJar/safety/limitations/).
+- **Honest limits.** NightJar sees what reaches Android. Messages the modem answers by itself, and RCS chats, are outside its view. See [limitations](https://indspl0it.github.io/NightJar-Postmark/safety/limitations/).
 
 ## Requirements
 
@@ -78,7 +78,7 @@ Other phones can work. Phone makers change the phone service a little, so on an 
 
 ## Install
 
-1. Download the APK from the [latest release](https://github.com/Indspl0it/NightJar/releases/latest). One APK holds both the app and the module.
+1. Download the APK from the [latest release](https://github.com/Indspl0it/NightJar-Postmark/releases/latest). One APK holds both the app and the module.
 2. Install it, then open Vector or LSPosed and turn on the NightJar module.
 3. Select **Phone Services** (`com.android.phone`) as the only scope.
 4. Reboot the phone.
@@ -94,18 +94,18 @@ If it doesn't match, don't install the APK. GitHub releases, the LSPosed module 
 
 To update, install the new APK over the old one and reboot. Your rules, settings and history stay.
 
-If calls or messages stop working, turn off the module in Vector or LSPosed and reboot. If the phone can't start, use your root manager's safe mode to turn off Xposed modules. Then [report the problem](https://indspl0it.github.io/NightJar/help/troubleshooting/).
+If calls or messages stop working, turn off the module in Vector or LSPosed and reboot. If the phone can't start, use your root manager's safe mode to turn off Xposed modules. Then [report the problem](https://indspl0it.github.io/NightJar-Postmark/help/troubleshooting/).
 
 ## Documentation
 
-The full guide is at **[indspl0it.github.io/NightJar](https://indspl0it.github.io/NightJar/)**.
+The full guide is at **[indspl0it.github.io/NightJar-Postmark](https://indspl0it.github.io/NightJar-Postmark/)**.
 
-- [What NightJar is](https://indspl0it.github.io/NightJar/intro/): the attacks in more detail
-- [Message types](https://indspl0it.github.io/NightJar/features/message-types/): every type NightJar knows, its risk and its actions
-- [Detection](https://indspl0it.github.io/NightJar/features/detection/): the detectors and their thresholds
-- [Blocking cautions](https://indspl0it.github.io/NightJar/safety/blocking-cautions/): what can break when you block a type
-- [Architecture](https://indspl0it.github.io/NightJar/internals/architecture/) and [hooks](https://indspl0it.github.io/NightJar/internals/hooks/): how the module works inside the phone service
-- [FAQ](https://indspl0it.github.io/NightJar/help/faq/) and [troubleshooting](https://indspl0it.github.io/NightJar/help/troubleshooting/)
+- [What NightJar is](https://indspl0it.github.io/NightJar-Postmark/intro/): the attacks in more detail
+- [Message types](https://indspl0it.github.io/NightJar-Postmark/features/message-types/): every type NightJar knows, its risk and its actions
+- [Detection](https://indspl0it.github.io/NightJar-Postmark/features/detection/): the detectors and their thresholds
+- [Blocking cautions](https://indspl0it.github.io/NightJar-Postmark/safety/blocking-cautions/): what can break when you block a type
+- [Architecture](https://indspl0it.github.io/NightJar-Postmark/internals/architecture/) and [hooks](https://indspl0it.github.io/NightJar-Postmark/internals/hooks/): how the module works inside the phone service
+- [FAQ](https://indspl0it.github.io/NightJar-Postmark/help/faq/) and [troubleshooting](https://indspl0it.github.io/NightJar-Postmark/help/troubleshooting/)
 
 ## Build from source
 
@@ -117,7 +117,7 @@ You need JDK 21 and the Android SDK (platforms 36 and 37).
 ./gradlew verify                 # all quality checks
 ```
 
-See [building](https://indspl0it.github.io/NightJar/dev/building/) for the toolchain and the quality checks, and [release](https://indspl0it.github.io/NightJar/dev/release/) for release signing.
+See [building](https://indspl0it.github.io/NightJar-Postmark/dev/building/) for the toolchain and the quality checks, and [release](https://indspl0it.github.io/NightJar-Postmark/dev/release/) for release signing.
 
 | Path | Content |
 |---|---|

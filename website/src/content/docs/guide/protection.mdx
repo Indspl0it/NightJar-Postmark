@@ -24,7 +24,7 @@ Each message type has one of four actions:
 |---|---|
 | Allow | Records the message. Android delivers it as usual. |
 | Allow and notify | Records the message, delivers it and sends you a notification. How the notification looks depends on the message's severity. |
-| Hold | Keeps the message in NightJar until you decide. No other app receives it. You can release it to your messaging app or block it on the [Held messages](/NightJar/guide/held-messages/) screen. |
+| Hold | Keeps the message in NightJar until you decide. No other app receives it. You can release it to your messaging app or block it on the [Held messages](/NightJar-Postmark/guide/held-messages/) screen. |
 | Block | Discards the message before any app sees it. NightJar keeps the record. |
 
 The network gets a normal delivery confirmation for every message, so the sender can't tell that you held or blocked
@@ -44,7 +44,7 @@ Below the switch is the active preset. If blocking can't work, NightJar shows th
 |---|---|
 | The NightJar module is not active yet | Turn on NightJar in Vector or LSPosed, select **Phone Services** as its scope, then reboot the phone. |
 | Safe mode is on, so NightJar paused blocking | Turn off safe mode on Home or in Settings. |
-| A blocking hook failed to load | NightJar can't block on this phone's software. It still records messages. Run the [self-test](/NightJar/guide/self-test/) and check [Protection status](/NightJar/guide/protection-status/) for the hook that failed. |
+| A blocking hook failed to load | NightJar can't block on this phone's software. It still records messages. Run the [self-test](/NightJar-Postmark/guide/self-test/) and check [Protection status](/NightJar-Postmark/guide/protection-status/) for the hook that failed. |
 | You turned off blocking | Turn on the Blocking switch. |
 
 ## Presets
@@ -60,10 +60,10 @@ Tap the preset line under the Blocking switch to choose a preset.
 | Custom | Shown after you change the action of any single type. You can't select it directly. |
 
 A preset replaces the action of every type. If your current preset is Custom, NightJar first asks **Replace your
-custom settings?** Custom rules and known senders stay as they are. [Message types](/NightJar/features/message-types/)
+custom settings?** Custom rules and known senders stay as they are. [Message types](/NightJar-Postmark/features/message-types/)
 lists what each preset does with each type.
 
-Before you choose Strict or Quarantine, read the [blocking cautions](/NightJar/safety/blocking-cautions/). Blocking
+Before you choose Strict or Quarantine, read the [blocking cautions](/NightJar-Postmark/safety/blocking-cautions/). Blocking
 voicemail indicators, MMS notifications or settings pushes can stop the matching carrier feature.
 
 ## Setting a single type
@@ -110,10 +110,10 @@ NightJar still records them."
 
 The links at the bottom of the screen open two lists that work alongside the preset:
 
-- [**Custom rules**](/NightJar/guide/custom-rules/) match on sender, port, text and more, and take priority over the
+- [**Custom rules**](/NightJar-Postmark/guide/custom-rules/) match on sender, port, text and more, and take priority over the
   preset. For example, a rule can allow your carrier's settings number in a type you block. A rule can't block or
   hold all normal messages. It needs a sender, port or text condition.
-- [**Known senders**](/NightJar/guide/known-senders/) are numbers you trust, such as your carrier's settings number.
+- [**Known senders**](/NightJar-Postmark/guide/known-senders/) are numbers you trust, such as your carrier's settings number.
   NightJar rates their messages as less severe. Your actions still apply.
 
 ## If a change doesn't reach the phone service
@@ -127,4 +127,4 @@ service, it uses that copy right away, also before you unlock the phone. After y
 rules.
 
 If the message stays after a reboot, check that the module is active in Vector or LSPosed. See
-[Troubleshooting](/NightJar/help/troubleshooting/).
+[Troubleshooting](/NightJar-Postmark/help/troubleshooting/).

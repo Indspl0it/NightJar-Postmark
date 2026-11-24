@@ -16,8 +16,8 @@ When the phone service starts, NightJar finds the methods it hooks by class name
 so it doesn't depend on a single build. It can work on other phones with Android 15 or later, on the AIDL or the older
 HIDL radio interface.
 
-To check a new phone, install NightJar, run a [self-test](/NightJar/guide/self-test/), and open
-[Protection status](/NightJar/guide/protection-status/). In researcher mode, Protection status lists each hook and its
+To check a new phone, install NightJar, run a [self-test](/NightJar-Postmark/guide/self-test/), and open
+[Protection status](/NightJar-Postmark/guide/protection-status/). In researcher mode, Protection status lists each hook and its
 state.
 
 Each hook has a tier. If a hook doesn't attach, its tier sets the effect:
@@ -31,7 +31,7 @@ Each hook has a tier. If a hook doesn't attach, its tier sets the effect:
 | Firewall, extra | NightJar can't block some types. |
 | Outbound | NightJar can't record some messages that apps send. |
 
-[Hooks](/NightJar/internals/hooks/) lists each hook and its tier.
+[Hooks](/NightJar-Postmark/internals/hooks/) lists each hook and its tier.
 
 ## Phone maker software
 
@@ -48,7 +48,7 @@ If the phone maker's software deletes a message, the detail shows "Software from
 ## Report a build
 
 If NightJar doesn't work correctly on your phone, open an issue on
-[GitHub](https://github.com/Indspl0it/NightJar/issues) and include:
+[GitHub](https://github.com/Indspl0it/NightJar-Postmark/issues) and include:
 
 1. The phone model and the build fingerprint (`adb shell getprop ro.build.fingerprint`).
 2. The NightJar version.

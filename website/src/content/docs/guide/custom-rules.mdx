@@ -34,7 +34,7 @@ For each message, NightJar finds the action in this order:
 
 Your rules run before the preset rules, so a rule can allow one sender that the preset would block.
 
-After that, the [safety limits](/NightJar/internals/rules-engine/#safety-limits) can change the result:
+After that, the [safety limits](/NightJar-Postmark/internals/rules-engine/#safety-limits) can change the result:
 
 - If the type doesn't support the action, the message is allowed.
 - Emergency alerts are always allowed.

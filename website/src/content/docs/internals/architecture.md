@@ -78,7 +78,7 @@ app.rules -> phone.snapshot: "control binder\nrules · settings · release"
 
 The app compiles your rules into a snapshot and sends it to the module. The module checks each message against the
 snapshot and sends what it sees back to the app as events. Events travel over a content provider. Rules, settings
-and commands travel over a binder. [IPC](/NightJar/internals/ipc/) describes both channels.
+and commands travel over a binder. [IPC](/NightJar-Postmark/internals/ipc/) describes both channels.
 
 Vector or LSPosed loads the module through `dev.nightjar.app.xposed.XposedEntry`, which `assets/xposed_init` lists.
 The module uses the legacy Xposed API 82, which both frameworks support.
@@ -132,7 +132,7 @@ app -> app: "classify · severity · notify"
 3. NightJar's **head filter** runs first in the `InboundSmsHandler` filter chain. It identifies the type and checks
    the rules snapshot, which returns Allow, Notify, Hold or Block. WAP pushes, SIM data downloads, cell broadcasts
    and voicemail indicators have their own enforcement points. See
-   [Rule engine](/NightJar/internals/rules-engine/#enforcement-points).
+   [Rule engine](/NightJar-Postmark/internals/rules-engine/#enforcement-points).
 4. For Hold and Block, the head filter ends the message with `dropFilteredSms`. The PDU travels to the app with the
    event, and for Hold the app keeps it so you can release the message later.
 5. For Allow and Notify, Android continues as usual. Meaning hooks record which filter or app received the message.
@@ -252,7 +252,7 @@ phone.hooks -> app.provider: "events after the\ncertificate matches" {style: {st
 | Copies of the database file | SQLCipher encrypts the database, and cloud backup is off. The key is in app-private storage, so a copy of the whole app data, for example a root backup, includes the key. |
 | App to internet | The app has no internet permission. A build check fails if a change adds it. |
 
-To report a security issue, see the [security policy](/NightJar/security/).
+To report a security issue, see the [security policy](/NightJar-Postmark/security/).
 
 ## Gradle modules
 
@@ -311,6 +311,6 @@ The build compiles the payload to a separate dex, and a quality check inspects t
 
 ## Read next
 
-- [Hooks](/NightJar/internals/hooks/): where the module attaches, and what happens when a hook is missing.
-- [Rule engine](/NightJar/internals/rules-engine/): how a message gets its action, and the safety limits.
-- [IPC](/NightJar/internals/ipc/): the channels between the module and the app.
+- [Hooks](/NightJar-Postmark/internals/hooks/): where the module attaches, and what happens when a hook is missing.
+- [Rule engine](/NightJar-Postmark/internals/rules-engine/): how a message gets its action, and the safety limits.
+- [IPC](/NightJar-Postmark/internals/ipc/): the channels between the module and the app.

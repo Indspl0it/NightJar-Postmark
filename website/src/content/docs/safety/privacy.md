@@ -81,4 +81,4 @@ to read your messages.
 
 ## Report a security problem
 
-See the [security policy](/NightJar/security/).
+See the [security policy](/NightJar-Postmark/security/).

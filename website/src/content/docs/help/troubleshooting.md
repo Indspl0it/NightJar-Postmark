@@ -3,7 +3,7 @@ title: Troubleshooting
 description: Common problems with NightJar and the steps to fix them.
 ---
 
-Most problems show on [Protection status](/NightJar/guide/protection-status/), which you open from Home. Each check
+Most problems show on [Protection status](/NightJar-Postmark/guide/protection-status/), which you open from Home. Each check
 there has a short fix text. The sections below add the cause of each problem.
 
 ## The module
@@ -26,9 +26,9 @@ The module didn't find a hook it needs to record messages: HK-06, HK-04, or both
 its hooks and stopped itself. Android works as if NightJar weren't installed.
 
 1. Open Settings > Diagnostics and select **Share diagnostics**.
-2. Open an issue on [GitHub](https://github.com/Indspl0it/NightJar/issues) and attach the file.
+2. Open an issue on [GitHub](https://github.com/Indspl0it/NightJar-Postmark/issues) and attach the file.
 
-For the tested phones and the hook tiers, see [compatibility](/NightJar/help/compatibility/).
+For the tested phones and the hook tiers, see [compatibility](/NightJar-Postmark/help/compatibility/).
 
 ### "NightJar cannot block messages on this build"
 
@@ -106,7 +106,7 @@ the phone". Android keeps it until the unlock, and NightJar checks it then.
 Most phones receive a few hidden messages each day from voicemail and the carrier. If Messages stays empty:
 
 1. Open Protection status and make sure that the module is active.
-2. Run a [self-test](/NightJar/guide/self-test/).
+2. Run a [self-test](/NightJar-Postmark/guide/self-test/).
 3. If the self-test passes, the phone hasn't received a hidden message yet.
 
 The self-test checks detection inside Android. It can't test messages that the modem handles without telling
@@ -128,7 +128,7 @@ The module sends events again when the app answers, so a short app stop loses no
 1. Open Messages and select the **On hold** chip.
 2. If the message is on hold, select **Release**.
 3. If NightJar blocked it, open the detail. **What happened** shows the rule or the preset action that blocked it.
-4. Change the action of the type, or add a [custom rule](/NightJar/guide/custom-rules/) that allows the sender.
+4. Change the action of the type, or add a [custom rule](/NightJar-Postmark/guide/custom-rules/) that allows the sender.
 
 To stop all blocking while you check, turn on safe mode. A blocked message can't come back. Use **Hold** for types
 that you want to review first.

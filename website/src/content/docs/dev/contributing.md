@@ -9,7 +9,7 @@ message that the user needed.
 ## Basic rules
 
 - The payload runs inside `com.android.phone`. It must never throw, never block the main looper and never change the
-  network acknowledgement. Each hook fails open. See [architecture](/NightJar/internals/architecture/#fail-open).
+  network acknowledgement. Each hook fails open. See [architecture](/NightJar-Postmark/internals/architecture/#fail-open).
 - The app has no `INTERNET` permission, and `checkManifestDebug` and `checkManifestRelease` fail if a change adds it.
 - Logs, tests, fixtures, commit messages and issues must not contain message text or a full phone number. Use the
   contract masker or synthetic data. `checkLogMasking` finds unmasked log calls.
@@ -24,7 +24,7 @@ message that the user needed.
 ./gradlew verify
 ```
 
-`verify` must end with `BUILD SUCCESSFUL`. [Building](/NightJar/dev/building/) lists each check and what makes it
+`verify` must end with `BUILD SUCCESSFUL`. [Building](/NightJar-Postmark/dev/building/) lists each check and what makes it
 fail.
 
 ## Pull requests
@@ -57,7 +57,7 @@ For a change in `payload/`, the template adds this checklist:
 4. Add a unit test with fake framework classes. The test must prove that the original result doesn't change when the
    hook throws.
 
-[Hooks](/NightJar/internals/hooks/) describes the resolver, the tiers and the callback rules.
+[Hooks](/NightJar-Postmark/internals/hooks/) describes the resolver, the tiers and the callback rules.
 
 ## Add a message type
 
@@ -109,4 +109,4 @@ Use the bug or feature issue template on GitHub. A bug report needs:
 4. The diagnostics file from Settings > Diagnostics > **Share diagnostics**.
 
 Don't paste real message text or a full phone number. For a security problem, see the
-[security policy](/NightJar/security/).
+[security policy](/NightJar-Postmark/security/).

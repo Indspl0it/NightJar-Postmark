@@ -33,4 +33,4 @@
 <li>If NightJar's code fails, Android handles the message as if NightJar weren't installed.</li>
 </ul>
 
-<p>Documentation: https://indspl0it.github.io/NightJar/</p>
+<p>Documentation: https://indspl0it.github.io/NightJar-Postmark/</p>

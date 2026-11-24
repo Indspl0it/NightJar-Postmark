@@ -68,7 +68,7 @@ Install NightJar only on a phone that you can recover.
 ## Can I export my messages?
 
 Yes. You can export a selection, the current filter or everything, as JSON, PDU hex or CSV. You can mask phone
-numbers, and the export includes message text only if you choose it. See [export](/NightJar/guide/export/).
+numbers, and the export includes message text only if you choose it. See [export](/NightJar-Postmark/guide/export/).
 
 ## Does NightJar work with two SIMs?
 

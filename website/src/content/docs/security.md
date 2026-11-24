@@ -58,4 +58,4 @@ Out of scope:
 - The app provider accepts calls only from the phone process. The control binder accepts calls only from the app.
 - A release build is signed with the release key and never with the debug key.
 
-[Architecture](/NightJar/internals/architecture/#trust-boundaries) shows the trust boundaries.
+[Architecture](/NightJar-Postmark/internals/architecture/#trust-boundaries) shows the trust boundaries.

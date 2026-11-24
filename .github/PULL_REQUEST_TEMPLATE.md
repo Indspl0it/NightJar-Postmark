@@ -6,7 +6,7 @@
 
 - [ ] `./gradlew verify` passes.
 - [ ] No message text and no full phone number in code, tests, fixtures, logs or this description.
-- [ ] User-visible text follows the [writing rules](https://indspl0it.github.io/NightJar/dev/contributing/#writing-rules).
+- [ ] User-visible text follows the [writing rules](https://indspl0it.github.io/NightJar-Postmark/dev/contributing/#writing-rules).
 - [ ] A change in `:contract` has fixtures on both sides.
 
 ## Payload changes only

@@ -59,7 +59,7 @@ wap -> apps: broadcast
 
 Vector or LSPosed loads the module into the processes of its scope, which the APK declares as `com.android.phone`
 (manifest metadata `xposedscope`, Xposed API 82). The framework calls `dev.nightjar.app.xposed.XposedEntry`, which
-`assets/xposed_init` lists. [Architecture](/NightJar/internals/architecture/) describes the two runtime parts and
+`assets/xposed_init` lists. [Architecture](/NightJar-Postmark/internals/architecture/) describes the two runtime parts and
 the IPC that follows.
 
 ### Startup
@@ -173,7 +173,7 @@ For each message, `SmsFilterCore` works through these checks in order:
 The filter calls the private `dropFilteredSms` through reflection with `blocked=true`, which deletes the raw-table row
 permanently. With `blocked=false` a later release of the same PDU would fail the duplicate check. The verdict is
 published only after the drop has run. Any exception returns false, so the message is delivered, and counts as an
-HK-08 error. [Rule engine](/NightJar/internals/rules-engine/#enforcement-points) lists the types that each
+HK-08 error. [Rule engine](/NightJar-Postmark/internals/rules-engine/#enforcement-points) lists the types that each
 enforcement point handles.
 
 ### After the head filter
@@ -247,7 +247,7 @@ roaming there.
   checks the message at that time.
 
 The other enforcement points run before the unlock with the stored rules. See
-[IPC](/NightJar/internals/ipc/#before-the-first-unlock).
+[IPC](/NightJar-Postmark/internals/ipc/#before-the-first-unlock).
 
 ### Cell broadcast
 
@@ -270,7 +270,7 @@ broadcast wiring step. Both are before-hooks on `CellBroadcastConfigTracker`:
 
 They change nothing while the setting is off. If the framework's range type can't be built, the original list passes
 unchanged. When you turn the setting off, the wide table stays until the cell broadcast app sends its next
-configuration. See [Cell broadcast](/NightJar/features/cell-broadcast/#settings).
+configuration. See [Cell broadcast](/NightJar-Postmark/features/cell-broadcast/#settings).
 
 The SUPL limit during an emergency call needs the emergency call state. This is HK-25 in the code, and it isn't a
 hook: `EmergencyWatcher` reads `Phone.isInEmergencyCall` on each phone every 2 seconds on the worker, with a longer
@@ -296,7 +296,7 @@ HK-19 is also an enforcement point, for the per-app **Block sending** switch. Fo
 sent `PendingIntent` with `RESULT_ERROR_GENERIC_FAILURE`, and the hook skips the original, so nothing is sent. The
 app sees a normal radio failure. The gate never blocks a send by the phone process itself or a send to an emergency
 number. Safe mode, Blocking off or the outgoing monitor off allow every send, and any error allows the send. See
-[Outgoing messages](/NightJar/features/outgoing/#block-an-app-from-sending).
+[Outgoing messages](/NightJar-Postmark/features/outgoing/#block-an-app-from-sending).
 
 An exception in an outgoing hook body is caught and logged in the body, so it never reaches the send.
 
@@ -338,7 +338,7 @@ hook runs. If the framework doesn't offer that method, nothing else changes.
 The module sends the hook health to the app. For each hook it carries the state, tier, target, error count, shield
 recovery count, last error and the p50 and p99 callback time. It also carries the live and total count of each tier
 (without `NOT_APPLICABLE` hooks), the firewall state and the dropped event counts. In researcher mode, the
-[Protection status](/NightJar/guide/protection-status/) screen shows the state of each hook.
+[Protection status](/NightJar-Postmark/guide/protection-status/) screen shows the state of each hook.
 
 ### Tiers and groups
 
@@ -408,7 +408,7 @@ Each new hook must:
 6. Have a unit test with fake framework classes that proves the original result doesn't change when the hook throws.
 
 An enforcement point must never return a result that makes Android broadcast a blocked message, and must report a
-message as filtered only after `dropFilteredSms` has run. [Contributing](/NightJar/dev/contributing/#add-a-hook)
+message as filtered only after `dropFilteredSms` has run. [Contributing](/NightJar-Postmark/dev/contributing/#add-a-hook)
 lists the other requirements for a change.
 
 ## Hook reference

@@ -18,7 +18,7 @@ The notification switches are in Settings > **Notifications**:
 
 Messages with the severity Normal don't notify you, unless you turn on the bell for their type.
 
-The bell on a type's row on the [Protection](/NightJar/guide/protection/) tab sends a notification for each message
+The bell on a type's row on the [Protection](/NightJar-Postmark/guide/protection/) tab sends a notification for each message
 of that type, whatever its severity and whether or not the switches above are on.
 
 The Strict preset turns on **Unusual**. If you change from Strict to another preset, NightJar sets **Unusual** back to
@@ -26,8 +26,8 @@ the value it had before.
 
 Some messages never notify you:
 
-- Messages from a sender or type you muted. See [mutes](/NightJar/guide/known-senders/#mutes).
-- The test messages of the [self-test](/NightJar/guide/self-test/).
+- Messages from a sender or type you muted. See [mutes](/NightJar-Postmark/guide/known-senders/#mutes).
+- The test messages of the [self-test](/NightJar-Postmark/guide/self-test/).
 
 ## What a notification shows
 
@@ -72,7 +72,7 @@ delivered. Neither action opens the app.
 
 If a release from a notification fails, NightJar replaces the notification with one that gives the reason, for
 example "The phone did not answer in time. Try again. The message is still on hold." The reasons are listed in
-[held messages](/NightJar/guide/held-messages/#release-a-message).
+[held messages](/NightJar-Postmark/guide/held-messages/#release-a-message).
 
 ## Channels
 
@@ -125,4 +125,4 @@ continues.
 NightJar also checks the phone service every 30 seconds while the app runs. If the phone service restarts and the
 module doesn't connect within 20 seconds, NightJar posts "Phone service runs without NightJar. The phone service
 started again without the NightJar module. Open Protection status to restart the phone service." See
-[restart the phone service](/NightJar/guide/protection-status/#restart-the-phone-service).
+[restart the phone service](/NightJar-Postmark/guide/protection-status/#restart-the-phone-service).

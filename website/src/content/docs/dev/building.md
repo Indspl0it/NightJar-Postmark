@@ -33,7 +33,7 @@ The build contains no fixed tool paths. Set these variables:
 | `JAVA_HOME` | The JDK 21 folder |
 | `ANDROID_HOME` | The Android SDK folder. You can set `sdk.dir` in `local.properties` instead. |
 | `ROBOLECTRIC_MAVEN_REPO` | Optional. The folder for the Robolectric `android-all` jars. The default is `~/.m2`. |
-| `NJ_KEYSTORE`, `NJ_KEY_ALIAS` | Optional. The release keystore and key alias. See [release](/NightJar/dev/release/). |
+| `NJ_KEYSTORE`, `NJ_KEY_ALIAS` | Optional. The release keystore and key alias. See [release](/NightJar-Postmark/dev/release/). |
 | `NJ_KEYSTORE_PASSWORD`, `NJ_KEY_PASSWORD` | Optional. The passwords for release signing. |
 
 `gradle.properties` gives Gradle 4 GB of heap and the Kotlin daemon 2 GB, and turns on parallel builds, the build cache
@@ -117,7 +117,7 @@ npm run preview    # serve the built site
 ```
 
 The diagrams are D2 code blocks in the pages. The build calls the `d2` binary, so `d2` must be on `PATH`. The local
-address is `http://localhost:4321/NightJar/`. The build stops when a page has a broken internal link.
+address is `http://localhost:4321/NightJar-Postmark/`. The build stops when a page has a broken internal link.
 
 The workflow `.github/workflows/pages.yml` builds the site for each pull request that changes `website/`. When such a
 change reaches `main`, the workflow also publishes the site to GitHub Pages. It installs D2 0.9.0 and checks the

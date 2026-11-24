@@ -38,5 +38,5 @@ Tagged, but not released. On a cold start, the app could read its settings a mom
 could then open without the app lock, and push the default settings, with safe mode off, to the module. 0.5.1 fixes
 this.
 
-[0.5.1]: https://github.com/Indspl0it/NightJar/releases/tag/v0.5.1
-[0.5.0]: https://github.com/Indspl0it/NightJar/tree/v0.5.0
+[0.5.1]: https://github.com/Indspl0it/NightJar-Postmark/releases/tag/v0.5.1
+[0.5.0]: https://github.com/Indspl0it/NightJar-Postmark/tree/v0.5.0

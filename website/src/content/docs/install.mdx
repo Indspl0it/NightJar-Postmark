@@ -5,13 +5,13 @@ description: Install the NightJar APK, turn on the module in Vector or LSPosed a
 
 import { Steps } from '@astrojs/starlight/components';
 
-Before you start, check that your phone meets the [requirements](/NightJar/requirements/).
+Before you start, check that your phone meets the [requirements](/NightJar-Postmark/requirements/).
 
 ## Get the APK
 
-Download the APK from the [releases page](https://github.com/Indspl0it/NightJar/releases/latest). Each release has
+Download the APK from the [releases page](https://github.com/Indspl0it/NightJar-Postmark/releases/latest). Each release has
 one APK, which contains both the app and the Xposed module. To build the APK yourself, see
-[building](/NightJar/dev/building/).
+[building](/NightJar-Postmark/dev/building/).
 
 ## Check the download
 
@@ -33,7 +33,7 @@ SHA-256: BA:4C:89:90:1C:27:D3:FB:D6:B1:24:84:2E:B8:0C:BA:A3:E8:D3:AB:E5:F2:A3:B0
   The line with `certificate SHA-256 digest` must show `ba4c89901c27d3fbd6b124842eb80cbaa3e8d3abe5f2a3b06925ac478f1b138a`.
 
 If the fingerprint is different, don't install the APK, and report it as described in the
-[security policy](https://github.com/Indspl0it/NightJar/blob/main/SECURITY.md).
+[security policy](https://github.com/Indspl0it/NightJar-Postmark/blob/main/SECURITY.md).
 
 The same key signs the APK on GitHub, in the LSPosed module repository and on F-Droid, so you can update from any of
 them. A debug build that you made yourself has a different key, and Android won't install a release over it. Uninstall
@@ -53,7 +53,7 @@ the debug build first.
 
 5. Reboot the phone.
 
-6. Open NightJar. The setup screens check each step. See [first run](/NightJar/first-run/).
+6. Open NightJar. The setup screens check each step. See [first run](/NightJar-Postmark/first-run/).
 
 </Steps>
 
@@ -94,7 +94,7 @@ Settings > Data and storage > **Turn off NightJar** shows the same steps.
 2. Reboot the phone.
 
 3. Report the problem with the build fingerprint and a diagnostics file. See
-   [troubleshooting](/NightJar/help/troubleshooting/).
+   [troubleshooting](/NightJar-Postmark/help/troubleshooting/).
 
 </Steps>
 

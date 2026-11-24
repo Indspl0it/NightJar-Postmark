@@ -13,7 +13,7 @@ a reboot.
 - **Messages** > **Waiting for you**, at the top of the list, for example "Waiting for you · 2".
 - The **On hold** filter in Messages.
 - A notification with **Allow** and **Block** actions, if notifications for the type are on. See
-  [notifications](/NightJar/guide/notifications/#actions).
+  [notifications](/NightJar-Postmark/guide/notifications/#actions).
 
 The message detail shows "On hold in NightJar" as the result.
 
@@ -39,14 +39,14 @@ the notification.
 
 | Message | What to do |
 |---|---|
-| The module is not active, so NightJar cannot release the message. | Check the module on [Protection status](/NightJar/guide/protection-status/). Release the message again after the module connects. |
+| The module is not active, so NightJar cannot release the message. | Check the module on [Protection status](/NightJar-Postmark/guide/protection-status/). Release the message again after the module connects. |
 | The phone did not answer in time. Try again. | Release the message again. |
 | The phone did not accept the message for delivery. | Android refused the message. Try again later, or block the message. |
-| The phone did not accept the release request from NightJar. | The module didn't accept the request as coming from the NightJar app. Reboot the phone. If it happens again, [share diagnostics](/NightJar/guide/protection-status/#share-diagnostics). |
+| The phone did not accept the release request from NightJar. | The module didn't accept the request as coming from the NightJar app. Reboot the phone. If it happens again, [share diagnostics](/NightJar-Postmark/guide/protection-status/#share-diagnostics). |
 | NightJar has no copy of this message, so it cannot release it. | NightJar didn't store the PDU. The message can't be released. |
 | NightJar cannot release this type of message. | Messages of this type can't be released. Block the message or leave it. |
 | NightJar cannot find this message. | The message was deleted. |
-| Release is not available yet | NightJar couldn't start the release. Try again. If it happens again, check [Protection status](/NightJar/guide/protection-status/). |
+| Release is not available yet | NightJar couldn't start the release. Try again. If it happens again, check [Protection status](/NightJar-Postmark/guide/protection-status/). |
 
 ## Block a held message
 
@@ -82,4 +82,4 @@ other types or notifies you about them.
 ## Hold and delivery
 
 Android confirms each message to the network before NightJar holds it, so the sender sees a held message as
-delivered. See [blocking cautions](/NightJar/safety/blocking-cautions/).
+delivered. See [blocking cautions](/NightJar-Postmark/safety/blocking-cautions/).

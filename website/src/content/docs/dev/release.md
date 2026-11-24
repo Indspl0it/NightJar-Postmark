@@ -75,7 +75,7 @@ The warning never shows a value, and a release build never uses the debug key.
 5. Build the unsigned release from a clean clone of the tag:
 
    ```sh
-   git clone --branch v0.5.1 https://github.com/Indspl0it/NightJar.git nightjar-v0.5.1
+   git clone --branch v0.5.1 https://github.com/Indspl0it/NightJar-Postmark.git nightjar-v0.5.1
    cd nightjar-v0.5.1
    ./gradlew :app:assembleRelease
    ```
@@ -144,4 +144,4 @@ publishes the version only when the two match, so the release must come out the 
 | `checkXposedMetadataRelease` | The Xposed meta-data or the `com.android.phone` scope is missing, or `assets/xposed_init` is missing or names a class that R8 removed. |
 | `checkApkSizeRelease` | The APK is larger than 15 MiB. |
 
-Before you publish, install the APK on a test phone and run a [self-test](/NightJar/guide/self-test/).
+Before you publish, install the APK on a test phone and run a [self-test](/NightJar-Postmark/guide/self-test/).

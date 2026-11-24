@@ -19,12 +19,12 @@ notification.
 
 NightJar works out the severity in this order:
 
-1. The default severity of the type, or of the subtype if it has its own. [Message types](/NightJar/features/message-types/)
+1. The default severity of the type, or of the subtype if it has its own. [Message types](/NightJar-Postmark/features/message-types/)
    lists the defaults.
 2. Your setting in Settings > **Severity per type**, if you set one.
 3. The result of a detector, if one fires. A detector can raise or lower the severity. For example, a location
    request during an emergency call becomes Normal.
-4. One level lower if the sender is in [Known senders](/NightJar/guide/known-senders/).
+4. One level lower if the sender is in [Known senders](/NightJar-Postmark/guide/known-senders/).
 5. Normal if the message was sent or added by an app you trust.
 
 Some evidence sets a minimum that steps 2 to 5 can't go below:
@@ -130,11 +130,11 @@ phones, so Recommended, Strict and Quarantine block **Malformed SMS** and **Malf
 ## Lower the severity for a sender or an app
 
 - **Known senders.** Mark a sender as expected from the message detail, or add it in Known senders. Later messages
-  from that sender are one level lower, within the limits above. See [known senders](/NightJar/guide/known-senders/).
+  from that sender are one level lower, within the limits above. See [known senders](/NightJar-Postmark/guide/known-senders/).
 - **Trusted apps.** NightJar records the messages a trusted app sends or adds as Normal and doesn't notify you about
   them. Trust doesn't apply to messages from the network.
 
 ## Notifications
 
 By default, you get a notification for Suspicious and High messages. To get one for Unusual messages too, turn on
-Settings > Notifications > **Unusual**. The Strict preset turns it on. See [notifications](/NightJar/guide/notifications/).
+Settings > Notifications > **Unusual**. The Strict preset turns it on. See [notifications](/NightJar-Postmark/guide/notifications/).

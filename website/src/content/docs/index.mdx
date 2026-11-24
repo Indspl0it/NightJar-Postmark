@@ -6,10 +6,10 @@ hero:
   tagline: Block SMS attacks that track your location, take over your SIM card or crash Android, and see every hidden message your phone receives.
   actions:
     - text: Get started
-      link: /NightJar/intro/
+      link: /NightJar-Postmark/intro/
       icon: right-arrow
     - text: Download
-      link: https://github.com/Indspl0it/NightJar/releases/latest
+      link: https://github.com/Indspl0it/NightJar-Postmark/releases/latest
       icon: external
       variant: minimal
 ---
@@ -50,16 +50,16 @@ records each one.
 	<Card title="SMS firewall in the phone service" icon="padlock">
 		NightJar checks each message inside the phone service, before Android passes it to an app or the SIM card.
 		Choose Allow, Hold or Block for each type, or pick a preset. Your rules apply from boot, before you first unlock
-		the phone. See [Protection](/NightJar/guide/protection/).
+		the phone. See [Protection](/NightJar-Postmark/guide/protection/).
 	</Card>
 	<Card title="Quarantine" icon="warning">
 		A held message stays in NightJar's encrypted database, and no app receives it. Read what it is first, then
-		release it to your messaging app or block it. See [held messages](/NightJar/guide/held-messages/).
+		release it to your messaging app or block it. See [held messages](/NightJar-Postmark/guide/held-messages/).
 	</Card>
 	<Card title="Attack detection" icon="magnifier">
 		Detectors look for known attack patterns: a burst of silent SMS, a settings push without a network PIN, a command
 		to the SIM browser (Simjacker, WIBattack) and a SIM that sends a message right after an update. See
-		[detection](/NightJar/features/detection/).
+		[detection](/NightJar-Postmark/features/detection/).
 	</Card>
 	<Card title="Evidence for each message" icon="document">
 		Each message keeps its PDU, the decoded fields, the format errors and every step it took through the phone
@@ -67,11 +67,11 @@ records each one.
 	</Card>
 	<Card title="Outgoing control" icon="phone">
 		See the messages that apps and the SIM send from your phone, and stop an app from sending SMS. See
-		[outgoing messages](/NightJar/features/outgoing/).
+		[outgoing messages](/NightJar-Postmark/features/outgoing/).
 	</Card>
 	<Card title="Fails open, stays offline" icon="information">
 		If NightJar fails, Android handles the message as if NightJar weren't installed. The app has no internet
-		permission and keeps its data in an encrypted database. See [privacy](/NightJar/safety/privacy/).
+		permission and keeps its data in an encrypted database. See [privacy](/NightJar-Postmark/safety/privacy/).
 	</Card>
 </CardGrid>
 
@@ -99,10 +99,10 @@ records each one.
 ## Start here
 
 <CardGrid>
-	<LinkCard title="What NightJar is" href="/NightJar/intro/" description="The SMS attacks NightJar protects you from." />
-	<LinkCard title="Architecture" href="/NightJar/internals/architecture/" description="How the module in the phone service and the app work together." />
-	<LinkCard title="Requirements" href="/NightJar/requirements/" description="Android version, root and Xposed framework." />
-	<LinkCard title="Install" href="/NightJar/install/" description="Install the APK and turn on the module." />
-	<LinkCard title="Blocking cautions" href="/NightJar/safety/blocking-cautions/" description="What can break when you block a message type." />
-	<LinkCard title="Privacy and security" href="/NightJar/safety/privacy/" description="What NightJar stores and how it protects the data." />
+	<LinkCard title="What NightJar is" href="/NightJar-Postmark/intro/" description="The SMS attacks NightJar protects you from." />
+	<LinkCard title="Architecture" href="/NightJar-Postmark/internals/architecture/" description="How the module in the phone service and the app work together." />
+	<LinkCard title="Requirements" href="/NightJar-Postmark/requirements/" description="Android version, root and Xposed framework." />
+	<LinkCard title="Install" href="/NightJar-Postmark/install/" description="Install the APK and turn on the module." />
+	<LinkCard title="Blocking cautions" href="/NightJar-Postmark/safety/blocking-cautions/" description="What can break when you block a message type." />
+	<LinkCard title="Privacy and security" href="/NightJar-Postmark/safety/privacy/" description="What NightJar stores and how it protects the data." />
 </CardGrid>

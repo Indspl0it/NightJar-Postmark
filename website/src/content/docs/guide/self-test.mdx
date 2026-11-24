@@ -48,7 +48,7 @@ stop it. You can't close the sheet while the test runs. Test messages that are a
 | SIM DD | SIM update from the network | NightJar blocks it before the SIM receives it. |
 | Replace | Replacement message | NightJar's head filter blocks it. |
 
-Each test needs one or more [hooks](/NightJar/internals/hooks/). If a hook isn't active, NightJar skips that test
+Each test needs one or more [hooks](/NightJar-Postmark/internals/hooks/). If a hook isn't active, NightJar skips that test
 and doesn't send its message.
 
 ## Results
@@ -90,10 +90,10 @@ The last result stays on Protection status, as "Last run: (date and time)", with
 - If some tests show **Skipped** or **Failed**, after you update NightJar or Vector or LSPosed.
 - If you think NightJar misses messages.
 
-If tests still fail, [share diagnostics](/NightJar/guide/protection-status/#share-diagnostics) when you report the
+If tests still fail, [share diagnostics](/NightJar-Postmark/guide/protection-status/#share-diagnostics) when you report the
 problem. The diagnostics file includes the state of each hook.
 
 :::note
 The self-test creates its messages inside the phone service, so it doesn't test the modem or the network. It can't
-test messages that the modem handles on its own. See [what NightJar can't see](/NightJar/safety/limitations/).
+test messages that the modem handles on its own. See [what NightJar can't see](/NightJar-Postmark/safety/limitations/).
 :::
